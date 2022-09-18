@@ -1,12 +1,8 @@
 # Importing Libraries
 
-import re
-from turtle import width
 import pygame
 import random
 import math
-
-from sqlalchemy import true
 
 pygame.init()
 
@@ -47,7 +43,7 @@ class DrawInformation:
 
         self.blockWidth = round((self.width - self.SIDE_PAD) / len(lst))
         self.blockHeight = math.floor((self.height - self.TOP_PAD) / (self.maxVal - self.minVal))
-        self.start_x = self.SIDE_PAD // 2
+        self.start_x = self.SIDE_PAD // 2 
 
 # Funtion to generate background, including text.
 
